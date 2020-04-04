@@ -1,0 +1,23 @@
+server:
+    port: 8443
+    ssl:
+      key-store: ../keystore.p12
+      key-store-password: corbet
+      keyStoreType: PKCS12
+      keyAlias: galaxysoftwares
+    servlet:
+        context-path: /
+spring:
+    h2:
+        console:
+            enabled: true #Enabling H2 Console. Make sure to use jdbc:h2:mem:testdb as JDBC URL when connecting to the console
+            path: '/h2'
+    jpa:
+        hibernate:
+            # ddl-auto: none # Use schema.sql then data.sql
+            ddl-auto: create-drop # Use data.sql
+        properties:
+            hibernate:
+                format_sql: true
+        database-platform: org.hibernate.dialect.H2Dialect
+        show-sql: true
