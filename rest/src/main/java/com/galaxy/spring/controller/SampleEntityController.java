@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.galaxy.spring.service.IService;
+import com.galaxy.spring.service.IEntityService;
 import com.galaxy.spring.model.SampleEntityVO;
 
 @RestController
 @RequestMapping(path = "v1/" + RestConstants.URL_ENTITIES_BASE)
-public class SampleEntityController implements IController<SampleEntityVO> {
+public class SampleEntityController implements IEntityController<SampleEntityVO> {
 
 	@Autowired
-	IService<SampleEntityVO> sampleEntityService;
+	IEntityService<SampleEntityVO> sampleEntityService;
 
 	@RequestMapping(method = RequestMethod.GET, path = RestConstants.URL_ENTITIES_BYID)
 	@Override

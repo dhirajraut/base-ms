@@ -6,7 +6,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.galaxy.spring.controller.IController;
+import com.galaxy.spring.controller.IEntityController;
 import com.galaxy.spring.model.SampleEntityVO;
 
 @WebAppConfiguration
@@ -21,7 +21,7 @@ public class AbstractControllerTest {
 		mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
 	}
 
-	protected void setUp(IController<SampleEntityVO> controller) {
+	protected void setUp(IEntityController<SampleEntityVO> controller) {
 		mockMvc = MockMvcBuilders.standaloneSetup(controller).build();
 	}
 

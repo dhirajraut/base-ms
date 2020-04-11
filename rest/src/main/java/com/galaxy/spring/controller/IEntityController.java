@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
  * Common interface for all controllers.
  */
 @RestController
-public interface IController<T> {
+public interface IEntityController<T> {
 
 	
 

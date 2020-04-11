@@ -17,7 +17,7 @@ import com.galaxy.spring.model.SampleEntityVO;
 import com.google.common.reflect.TypeToken;
 
 @Service
-public class SampleEntityService implements IService<SampleEntityVO> {
+public class SampleEntityService implements IEntityService<SampleEntityVO> {
 
 	@Autowired
 	ISampleEntityRepository repository;

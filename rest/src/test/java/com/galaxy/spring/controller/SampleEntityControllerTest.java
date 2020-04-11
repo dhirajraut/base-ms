@@ -19,13 +19,13 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.util.Assert;
 
 import com.galaxy.spring.model.SampleEntityVO;
-import com.galaxy.spring.service.IService;
+import com.galaxy.spring.service.IEntityService;
 
 @Transactional
 public class SampleEntityControllerTest extends AbstractControllerTest {
 
 	@Mock
-	IService<SampleEntityVO> sampleEntityService; // Service to mock.
+	IEntityService<SampleEntityVO> sampleEntityService; // Service to mock.
 
 	@InjectMocks
 	SampleEntityController sampleEntityController; // Controller where the mocks to be injected.

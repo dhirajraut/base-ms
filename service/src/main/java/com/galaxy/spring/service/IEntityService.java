@@ -1,6 +1,6 @@
 package com.galaxy.spring.service;
 
-public interface IService<T> {
+public interface IEntityService<T> {
 	/**
 	 * Returns all objects.
 	 * 
