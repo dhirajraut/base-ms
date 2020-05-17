@@ -4,21 +4,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.5.RELEASE</version>
+		<groupId>com.galaxy</groupId>
+		<artifactId>spring-boot-parent-pom</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	
 	<groupId>com.galaxy.spring</groupId>
 	<artifactId>base-ms</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<name>base-ms</name>
 	<description>base-ms</description>
 	<packaging>pom</packaging>
-
-	<properties>
-		<java.version>1.8</java.version>
-		<io.springfox.springfox.version>2.9.2</io.springfox.springfox.version>
-	</properties>
 
 	<dependencies>
 		<!-- Spring dependencies -->
@@ -64,18 +59,15 @@
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
-			<version>${io.springfox.springfox.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
-			<version>${io.springfox.springfox.version}</version>
 		</dependency>
 		<!-- Mapper dependencies -->
 		<dependency>
 			<groupId>org.modelmapper</groupId>
 			<artifactId>modelmapper</artifactId>
-			<version>2.3.6</version>
 		</dependency>
 	</dependencies>
 
