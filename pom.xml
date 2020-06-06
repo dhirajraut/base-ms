@@ -4,13 +4,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.galaxy</groupId>
-		<artifactId>spring-boot-parent-pom</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>com.github.dhirajraut</groupId>
+		<artifactId>java-spring-boot-parent</artifactId>
+		<version>master-SNAPSHOT</version>
 	</parent>
 	
 	<groupId>com.galaxy.spring</groupId>
 	<artifactId>base-ms</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>base-ms</name>
 	<description>base-ms</description>
 	<packaging>pom</packaging>
@@ -78,4 +79,11 @@
 		<module>rest</module>
  		<module>client</module>
 	</modules>
+	
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
 </project>
