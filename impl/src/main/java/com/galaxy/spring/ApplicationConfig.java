@@ -40,7 +40,7 @@ public class ApplicationConfig {
 	 * Redirect HTTP requests to HTTPS.
 	 * @return
 	 */
-	@Bean
+//	@Bean
 	public TomcatServletWebServerFactory servletContainer() {
 	    TomcatServletWebServerFactory tomcat =
 	            new TomcatServletWebServerFactory() {

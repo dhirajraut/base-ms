@@ -1,12 +1,12 @@
-server:
-    port: 8443
-    ssl:
-      key-store: ../keystore.p12
-      key-store-password: corbet
-      keyStoreType: PKCS12
-      keyAlias: galaxysoftwares
-    servlet:
-        context-path: /
+#server:
+#    port: 8443
+#    ssl:
+#      key-store: ../keystore.p12
+#      key-store-password: corbet
+#      keyStoreType: PKCS12
+#      keyAlias: galaxysoftwares
+#    servlet:
+#        context-path: /
 spring:
     h2:
         console:
